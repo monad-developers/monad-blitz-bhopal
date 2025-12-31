@@ -4,6 +4,10 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]  # Trigger on new PRs or updates
 
+permissions:
+  statuses: write
+  pull-requests: read
+
 jobs:
   check-author:
     runs-on: ubuntu-latest
